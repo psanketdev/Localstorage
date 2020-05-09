@@ -1,0 +1,145 @@
+<!doctype html>
+
+<!-- If multi-language site, reconsider usage of html lang declaration here. -->
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>LocalStorage -JS</title>
+
+  <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
+  <!-- <meta name="description" lang="en" content=""> -->
+
+  <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
+  <!-- <meta name="keywords" lang="en" content=""> -->
+
+  <!-- View-port Basics: http://mzl.la/VYREaP -->
+  <!-- This meta tag is used for mobile device to display the page without any zooming,
+         so how much the device is able to fit on the screen is what's shown initially. 
+         Remove comments from this tag, when you want to apply media queries to the website. -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+
+  <!-- To adhear no-cache for Chrome -->
+  <!--   <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-store, no-cache" />
+    <meta http-equiv="Expires" content="0" /> -->
+
+  <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap"
+    rel="stylesheet">
+
+  <!--font-awesome link for icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
+
+
+
+</head>
+
+<body>
+  <!--container start-->
+  <div class="container">
+    <!-- header start -->
+    <header>
+      <div class="wrapper">
+        <h1>
+          <a href="index.html" title="">
+            <img src="" alt="">
+          </a>
+        </h1>
+        <div class="get-start-form">
+          <a href="#FIXME" title="Sign Up" class="signup-btn">sign up</a>
+          <a href="#FIXME" title="Sign In" class="signin-btn">sign In</a>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main>
+      <div class="main-container" id="container">
+        <div class="wrapper formModal">
+          <div class="form-container sign-up-container">
+            <form action="#FIXME" class="signup-form">
+              <h2>Create Account</h2>
+              <div class="social-container">
+                <a href="#FIXME" class="social facebook" title="Facebook" target="_blank">facebook</a>
+                <a href="#FIXME" class="social google" title="Google Plus" traget="_blank">google</a>
+                <a href="#FIXME" class="social linkedin" title="Linkedin" traget="_blank">linkedin</a>
+              </div>
+              <span>or use your email for registration</span>
+              <div class="from-group">
+                <input type="text" placeholder="Username" class="signup-name" data-regex="name-regex">
+                <span class="name_error">Please enter a valid username...</span>
+              </div>
+              <div class="from-group">
+                <input type="email" placeholder="Email" class="signup-email" data-regex="email-regex">
+                <span class="email_error">please enter a valid email id...</span>
+              </div>
+              <div class="from-group">
+                <input type="password" placeholder="Password" class="signup-password" data-regex="password-regex">
+                <span class="password_error">password must contain atleast one special character and number</span>
+              </div>
+              <div class="from-control">
+                <button type="submit" class="sign-up">Sign Up</button>
+              </div>
+            </form>
+          </div>
+          <div class="form-container sign-in-container">
+            <form action="#FIXME" class="signin-form">
+              <h2>Sign in</h2>
+              <div class="social-container">
+                <a href="#" class="social facebook" title="Facebook" target="_blank">facebook</a>
+                <a href="#" class="social google" title="Facebook" target="_blank">google</a>
+                <a href="#" class="social linkedin" title="Facebook" target="_blank">linkedin</a>
+              </div>
+              <span>or use your account</span>
+              <div class="from-group">
+                <input type="email" placeholder="Email" class="signin-email" data-regex="email-regex">
+                <span class="signin_email_error">please enter a valid email id...</span>
+              </div>
+              <div class="from-group">
+                <input type="password" placeholder="Password" class="signin-password" data-regex="password-regex">
+                <span class="signin_password_error">please enter a valid password...</span>
+              </div>
+              <a href="#FIXME">Forgot your password?</a>
+              <div class="from-control">
+                <button type="submit" class="sign-in">Sign In</button>
+              </div>
+            </form>
+          </div>
+          <div class="overlay-container">
+            <div class="overlay">
+              <div class="overlay-panel overlay-left">
+                <h2>Welcome Back!</h2>
+                <p>To keep connected with us please login with your personal info</p>
+                <button class="ghost" id="signIn">Sign In</button>
+              </div>
+              <div class="overlay-panel overlay-right">
+                <h2>Hello, Friend!</h2>
+                <p>Enter your personal details and start journey with us</p>
+                <button class="ghost" id="signUp">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- main end -->
+    <!-- footer start -->
+    <footer>
+
+    </footer>
+    <!-- footer end -->
+  </div>
+  <!--container end-->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
